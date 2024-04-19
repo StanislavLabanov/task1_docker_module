@@ -5,12 +5,10 @@ services:
     build:
       dockerfile: Dockerfile
     ports:
-      - "1000:3000"
+      - "3000:3000"
   date:
     image: staslabanov/main-task1-date
     build:
       dockerfile: date.dockerfile
-    ports:
-      - "1005:3005"
     depends_on:
       - main
